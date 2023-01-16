@@ -17,7 +17,19 @@ void setup() {
      .setPosition(140,300)
   
      .updateSize();
+     cp5 = new ControlP5(this);
+     cp5.addSlider("num")
+       .setPosition(100,50)
+     .setRange(0,100)
+     ;
+     
+     
+     
 }
+void slider(int num1) {
+ num=num1;
+}
+
 void initiateData() {
   cls=new Circle[num];
   for (int i = 0; i<cls.length; i++) {
